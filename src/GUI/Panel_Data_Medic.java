@@ -11,100 +11,72 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Panel_Data_Medic extends JPanel {
-
 	private JTextField textField_7;
-	private JTextField textField_8;
-	private JTextField textField_9;
-	private JTextField textField_10;
-	
+	private JTextField textField_1;
+	private JLabel lblPrenume;
+	private JTextField textField_2;
+	private JLabel lblNewLabel_2;
+	private JTextField textField_4;
+	private JLabel lblDomeniu;
+	private JTextField textField;
+	private JLabel lblNewLabel;
+	private JTextField textField_3;
+
+
 	/**
 	 * Create the panel.
 	 */
 	public Panel_Data_Medic() {
 		
 		setBorder(BorderFactory.createTitledBorder("Date Medic"));
-		setPreferredSize(new Dimension(746, 100));
+		setPreferredSize(new Dimension(750, 90));
+		setLayout(null);
 		
-		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths 	= new int[]{0, 0, 25, 150, 50, 0, 100, 0, 130, 0, 70, 142, 0};
-		gridBagLayout.rowHeights 	= new int[]{18, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-		gridBagLayout.rowWeights 	= new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-		setLayout(gridBagLayout);
+		JLabel lblNewLabel_1 = new JLabel("Nume");
+		lblNewLabel_1.setBounds(10, 28, 46, 14);
+		add(lblNewLabel_1);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(66, 25, 140, 20);
+		add(textField_1);
+		textField_1.setColumns(10);
+		
+		lblPrenume = new JLabel("Prenume");
+		lblPrenume.setBounds(250, 28, 60, 14);
+		add(lblPrenume);
+		
+		textField_2 = new JTextField();
+		textField_2.setColumns(10);
+		textField_2.setBounds(320, 25, 140, 20);
+		add(textField_2);
+		
+		lblNewLabel_2 = new JLabel("Parafa");
+		lblNewLabel_2.setBounds(496, 28, 71, 14);
+		add(lblNewLabel_2);
+		
+		textField_4 = new JTextField();
+		textField_4.setBounds(577, 25, 140, 20);
+		add(textField_4);
+		textField_4.setColumns(10);
+		
+		lblDomeniu = new JLabel("Domeniu");
+		lblDomeniu.setBounds(10, 53, 46, 14);
+		add(lblDomeniu);
+		
+		textField = new JTextField();
+		textField.setBounds(66, 50, 140, 20);
+		add(textField);
+		textField.setColumns(10);
+		
+		lblNewLabel = new JLabel("Ambulatoriu");
+		lblNewLabel.setBounds(250, 53, 57, 14);
+		add(lblNewLabel);
+		
+		textField_3 = new JTextField();
+		textField_3.setBounds(320, 50, 397, 20);
+		add(textField_3);
+		textField_3.setColumns(10);
 		
 		
-
-		JLabel lblMedic = new JLabel("Medic");
-		GridBagConstraints gbc_lblMedic = new GridBagConstraints();
-		gbc_lblMedic.anchor = GridBagConstraints.WEST;
-		gbc_lblMedic.insets = new Insets(0, 0, 5, 5);
-		gbc_lblMedic.gridx = 1;
-		gbc_lblMedic.gridy = 5;
-		add(lblMedic, gbc_lblMedic);
-		
-		textField_7 = new JTextField();
-		GridBagConstraints gbc_textField_7 = new GridBagConstraints();
-		gbc_textField_7.gridwidth = 2;
-		gbc_textField_7.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_7.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_7.gridx = 3;
-		gbc_textField_7.gridy = 5;
-		add(textField_7, gbc_textField_7);
-		textField_7.setColumns(10);
-		
-		JLabel lblParafa = new JLabel("Parafa");
-		GridBagConstraints gbc_lblParafa = new GridBagConstraints();
-		gbc_lblParafa.anchor = GridBagConstraints.EAST;
-		gbc_lblParafa.gridwidth = 2;
-		gbc_lblParafa.insets = new Insets(0, 0, 5, 5);
-		gbc_lblParafa.gridx = 6;
-		gbc_lblParafa.gridy = 5;
-		add(lblParafa, gbc_lblParafa);
-		
-		textField_8 = new JTextField();
-		GridBagConstraints gbc_textField_8 = new GridBagConstraints();
-		gbc_textField_8.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_8.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_8.gridx = 8;
-		gbc_textField_8.gridy = 5;
-		add(textField_8, gbc_textField_8);
-		textField_8.setColumns(10);
-		
-		JLabel lblMail = new JLabel("Mail");
-		GridBagConstraints gbc_lblMail = new GridBagConstraints();
-		gbc_lblMail.anchor = GridBagConstraints.WEST;
-		gbc_lblMail.insets = new Insets(0, 0, 5, 5);
-		gbc_lblMail.gridx = 1;
-		gbc_lblMail.gridy = 6;
-		add(lblMail, gbc_lblMail);
-		
-		textField_9 = new JTextField();
-		GridBagConstraints gbc_textField_9 = new GridBagConstraints();
-		gbc_textField_9.gridwidth = 6;
-		gbc_textField_9.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_9.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_9.gridx = 3;
-		gbc_textField_9.gridy = 6;
-		add(textField_9, gbc_textField_9);
-		textField_9.setColumns(10);
-		
-		JLabel lblNrTel = new JLabel("Nr. Tel.");
-		GridBagConstraints gbc_lblNrTel = new GridBagConstraints();
-		gbc_lblNrTel.anchor = GridBagConstraints.EAST;
-		gbc_lblNrTel.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNrTel.gridx = 10;
-		gbc_lblNrTel.gridy = 6;
-		add(lblNrTel, gbc_lblNrTel);
-		
-		textField_10 = new JTextField();
-		GridBagConstraints gbc_textField_10 = new GridBagConstraints();
-		gbc_textField_10.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_10.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_10.gridx = 11;
-		gbc_textField_10.gridy = 6;
-		add(textField_10, gbc_textField_10);
-		textField_10.setColumns(10);
-		
-
 	}
 }

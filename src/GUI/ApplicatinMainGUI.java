@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 public class ApplicatinMainGUI extends JFrame{
 	
-	JPanel retetaPanel = new Panel_RetetaMainPanel();
+	JPanel retetaPanel = new Panel_Reteta();
 	JMenuBar menuBar = new MenuBar();
 	
 	

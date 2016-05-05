@@ -6,11 +6,11 @@ import java.awt.Container;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import GUI.Panel_RegisterMedic;
+import GUI.Panel_Register_Medic;
 
 public class Frame_Register extends JFrame{
 	
-	JPanel registerMedic = new Panel_RegisterMedic();
+	JPanel registerMedic = new Panel_Register_Medic();
 	
 	public Frame_Register() {
 		

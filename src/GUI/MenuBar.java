@@ -1,11 +1,11 @@
 package GUI;
-import javax.swing.Box;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
 import Listeneri.Listener_Exit;
 import Listeneri.Listener_NewMedic;
+import Listeneri.Listener_NewPacient;
 import Listeneri.Listener_NewReteta;
 
 public class MenuBar extends JMenuBar{
@@ -46,12 +46,16 @@ public class MenuBar extends JMenuBar{
 		
 		JMenuItem registerMedic = new JMenuItem("Register Medic");
 		JMenuItem registerFarmacist = new JMenuItem("Register Farmacist");
+		JMenuItem registerPacient = new JMenuItem("Register Pacient");
 		
 		register.add(registerMedic);
 		registerMedic.addActionListener(new Listener_NewMedic());
 		
 		register.add(registerFarmacist);
 		registerFarmacist.addActionListener(new Listener_NewReteta());
+		
+		register.add(registerPacient);
+		registerPacient.addActionListener(new Listener_NewPacient());
 		
 		
 		
