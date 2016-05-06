@@ -63,6 +63,8 @@ public class DatabaseConetion {
 			
 			
 			ResultSet rs = stm.executeQuery(query); 
+			
+			System.out.println("am reusit sa introduc urmatoarele date: " + user + " " + password + " " + Mod );
 		
 		} catch (Exception e) {
 			// TODO: handle exception

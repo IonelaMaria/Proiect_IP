@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import DataBase.DatabaseConetion;
+import Listeneri.Listener_Save_Pacient;
 import Necesare.Sha256;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -38,10 +39,9 @@ public class Panel_Butons extends JPanel {
 		setLayout(null);
 		
 		btnSave = new JButton("Save");
-		btnSave.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
+		btnSave.addActionListener(new Listener_Save_Pacient(){
 		});
+			
 		btnSave.setBounds(30, 10, 160, 51);
 		add(btnSave);
 		
