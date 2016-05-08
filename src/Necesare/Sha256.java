@@ -5,7 +5,7 @@ public class Sha256 {
 
 	
 	//Comvertorul de sha care face criptarea pentru baza de date;
-	public String sha256(String possiblePassword) {
+	public static String sha256(String possiblePassword) {
 		try{
 	        MessageDigest digest = MessageDigest.getInstance("SHA-256");
 	        byte[] hash = digest.digest((""+possiblePassword).getBytes("UTF-8"));
