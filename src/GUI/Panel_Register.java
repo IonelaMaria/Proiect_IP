@@ -162,7 +162,6 @@ public class Panel_Register extends JPanel {
 				
 				conn.Register(dataList);
 				
-			    	JOptionPane.showMessageDialog(null, "User or Password is INCORECT !!!");
 				
 			}
 		});

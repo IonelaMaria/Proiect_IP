@@ -25,7 +25,7 @@ public class Frame_SecondaryFrame extends JFrame{
 		}
 		
 		else if (name == "Register Medic"){
-			JPanel retetaPanel = new Panel_Register_Medic();
+			JPanel retetaPanel = new Panel_Register();
 			c.add(retetaPanel,BorderLayout.CENTER);
 			setSize(800, 335);
 		}
