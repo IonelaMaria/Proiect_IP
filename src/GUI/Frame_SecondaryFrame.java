@@ -3,8 +3,11 @@ package GUI;
 import java.awt.BorderLayout;
 import java.awt.Container;
 
+import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
 
 public class Frame_SecondaryFrame extends JFrame{
 	
@@ -28,6 +31,8 @@ public class Frame_SecondaryFrame extends JFrame{
 			JPanel retetaPanel = new Panel_Register();
 			c.add(retetaPanel,BorderLayout.CENTER);
 			setSize(800, 335);
+			
+			
 		}
 		
 		else if (name == "Register Pacient"){

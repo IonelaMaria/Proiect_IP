@@ -1,22 +1,16 @@
 package GUI;
 
 import java.awt.Dimension;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import DataBase.DatabaseConetion;
 import Listeneri.Listener_Save_Pacient;
-import Necesare.Sha256;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 public class Panel_Butons extends JPanel {
 	
@@ -39,8 +33,26 @@ public class Panel_Butons extends JPanel {
 		setLayout(null);
 		
 		btnSave = new JButton("Save");
-		btnSave.addActionListener(new Listener_Save_Pacient(){
+		btnSave.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				
+				DatabaseConetion conn = new DatabaseConetion();
+				ArrayList<String> list = new ArrayList<>();
+				Panel_UPM upm = new Panel_UPM();
+				
+				list.add(upm.getName());
+				list.add(upm.getPassword());
+				list.add(upm.getMod());
+				
+				conn.Register(list);
+			}
 		});
+			
+			
+			
+	
 			
 		btnSave.setBounds(30, 10, 160, 51);
 		add(btnSave);

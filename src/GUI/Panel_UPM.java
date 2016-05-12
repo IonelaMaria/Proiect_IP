@@ -69,29 +69,27 @@ public class Panel_UPM extends JPanel {
 		textField_3.setBounds(577, 23, 140, 20);
 		add(textField_3);
 		textField_3.setColumns(10);
-		
-		String userTextValue = textField_1.getText();
-		String passwordTextValue = textField_1.getText();
-		String modTextValue = textField_1.getText();
-		
-		
-		
-		this.Name 		= userTextValue;
-		this.Password 	= passwordTextValue;
-		this.Mod 		= modTextValue;
+//		
+//		String userTextValue = textField_1.getText();
+//		String passwordTextValue = textField_1.getText();
+//		String modTextValue = textField_1.getText();
+//		
+//		
+//		
+//		this.Name 		= userTextValue;
+//		this.Password 	= passwordTextValue;
+//		this.Mod 		= modTextValue;
 	}
 	
 	public String getName(){
-		return Name;
+		return textField_1.getText();
 	}
 	
 	public String getPassword(){
-		return Password;
+		return textField_2.getText();
 	}
 	
 	public String getMod(){
-		return Mod;
+		return textField_3.getText();
 	}
-	
-
 }

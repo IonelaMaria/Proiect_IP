@@ -1,10 +1,8 @@
 package GUI;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.BorderFactory;
-import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
@@ -12,9 +10,11 @@ import javax.swing.border.EmptyBorder;
 public class Panel_Register_Pacient extends JPanel{
 
 	
-	JPanel dp = new Panel_Data_Pacient();
-	JPanel upm = new Panel_UPM();
-	JPanel btn = new Panel_Butons();
+	Panel_Data_Pacient dp = new Panel_Data_Pacient();
+	Panel_UPM upm = new Panel_UPM();
+	Panel_Butons btn = new Panel_Butons();
+	
+	
 
 	
 	public Panel_Register_Pacient() {
@@ -28,6 +28,19 @@ public class Panel_Register_Pacient extends JPanel{
 		add(btn);
 		btn.setLayout(null);
 		
+	}
+	
+	public ArrayList<String> getPaneldata(){
+		
+		ArrayList<String> data = new ArrayList<>();
+		
+		
+		
+		data.add(upm.getName());
+		data.add(upm.getPassword());
+		data.add(upm.getMod());
+		
+		return data;
 	}
 	
 }
